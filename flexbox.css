@@ -70,6 +70,17 @@ body {
     background-color: rgba(0, 0, 0, 0);
 }
 
+@keyframes grow {
+    0% {
+        width: 100%;
+        height: 20%;
+    }
+    100% {
+        width: 100%;
+        height: 80%;
+    }
+}
+
 @media (max-width: 900px) {
     .container {
         flex-direction: column;
@@ -78,10 +89,36 @@ body {
     .box {
         width: 100%;
         height: 20%;
+        animation-name: grow;
+        animation-play-state: running;
+        animation-iteration-count: 2;
+        animation-duration: 1s;
+        animation-timing-function: ease-in-out;
+        animation-direction: alternate;
     }
 
     .box:hover {
         width: 100%;
         height: 80%;
+    }
+
+    .box:nth-child(1) {
+        animation-delay: 0;
+    }
+
+    .box:nth-child(2) {
+        animation-delay: 2s;
+    }
+
+    .box:nth-child(3) {
+        animation-delay: 4s;
+    }
+
+    .box:nth-child(4) {
+        animation-delay: 6s;
+    }
+
+    .box:nth-child(5) {
+        animation-delay: 8s;
     }
 }
