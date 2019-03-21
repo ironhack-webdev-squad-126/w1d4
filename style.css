@@ -109,6 +109,18 @@ body {
     text-align: center;
 }
 
+@media (max-width: 900px) {
+    .column-wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .column {
+        width: 75vw;
+        margin-bottom: 50px;
+    }
+}
+
 .artist {
     background-color: #19a960;
     color: #fff;
