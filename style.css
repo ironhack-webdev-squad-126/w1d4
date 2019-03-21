@@ -1,0 +1,61 @@
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    margin: 0;
+}
+
+.navigation {
+    padding: 10px 20px;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100vw;
+}
+
+.navigation-logo {
+    height: 50px;
+}
+
+.navigation-link {
+    text-decoration: none;
+    color: #262626;
+    margin-left: 15px;
+    font-weight: 300;
+}
+
+.navigation-link-wrapper {
+    /* padding-top: 15px; */
+}
+
+.intro {
+    background-image: url('https://raw.githubusercontent.com/ironhack-labs/lab-css-spotify-clone/master/starter-code/images/landing.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 120vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.intro-content {
+    max-width: 500px;
+}
+
+.intro-heading {
+    color: #fff;
+    text-align: center;
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.intro-copy {
+    color: #fff;
+    text-align: center;
+    font-size: 18px;
+}
