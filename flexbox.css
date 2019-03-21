@@ -1,0 +1,44 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    height: 100vh;
+    align-items: center;
+}
+
+.box {
+    width: 20%;
+    height: 500px;
+    background-color: chartreuse;
+    flex-grow: 1;
+    flex-shrink: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    color: #fff;
+    transition: 250ms all ease-in-out;
+}
+
+.box:hover {
+    width: 80%;
+}
+
+.box:nth-child(2n-1) {
+    background-color: red;
+}
+
+.box:nth-child(3) {
+    /* align-self: flex-end; */
+}
